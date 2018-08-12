@@ -5,9 +5,7 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-# Place your database schema code here
-
-# Example code:
+###########################################user
 class User(Base):
     __tablename__ = "users"
     id = Column(Integer, primary_key = True)
@@ -24,6 +22,8 @@ class User(Base):
         		self.passward,
         		self.skills ))
 
+#########################################comment
+
 class Comment(Base):
     __tablename__ = "comments"
     id = Column(Integer, primary_key = True)
@@ -33,3 +33,17 @@ class Comment(Base):
     def __repr__(self):
         return ("comment content: {}".format(
         		self.comment))
+
+###########################################post
+
+class Post(Base):
+    __tablename__ = "posts"
+    id = Column(Integer, primary_key = True)
+    post_name = Column(String)
+
+
+    def __repr__(self):
+        return ("post_name: {}".format(
+        		self.post))
+
+
