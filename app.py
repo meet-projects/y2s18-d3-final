@@ -12,6 +12,10 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
+@app.route('/log-in')
+def log_in():
+	return render_template('log_in.html')
+
 @app.route('/user/<int:user_id>')
 def display_user(user_id,user):
     return render_template('user.html', user_id=user_id,user=query_by_id(user_id))
