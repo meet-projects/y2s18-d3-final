@@ -23,3 +23,13 @@ class User(Base):
         		self.name,
         		self.passward,
         		self.skills ))
+
+class Comment(Base):
+    __tablename__ = "comments"
+    id = Column(Integer, primary_key = True)
+    comment_content = Column(String)
+
+
+    def __repr__(self):
+        return ("comment content: {}".format(
+        		self.comment))

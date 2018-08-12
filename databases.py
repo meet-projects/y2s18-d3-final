@@ -1,6 +1,6 @@
 # Database related imports
 # Make sure to import your tables!
-from model import Base, Student
+from model import Base, User
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -32,3 +32,20 @@ def get_User_by_name():
 	user = session.query(
 		User).filter_by(name=user_name).first()
 	return user
+
+def add_Comment(comment_content):
+    print("Added a comment!")
+    comment = Cumment(comment=comment_content,)
+    session.add(comment)
+    session.commit()
+
+def get_Comment():
+    comment = session.query(
+        Cumment).first()
+    return get_Comment
+
+
+def get_all_Comments():
+    comment = session.query(
+        Cumment).all()
+    return get_all_Comments
