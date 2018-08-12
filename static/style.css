@@ -11,15 +11,17 @@
 
 body
 {
-	background-color: green;
+	background-color: #8BAA00;
 	color:white;
 }
 h1
 {
-	color:green;
+	color:white;
+	top: 70px;
+	
 }
 
-a 
+/*a 
 {color:white;
 
 }
@@ -41,15 +43,27 @@ a
 {
 	position:relative;
 }
-
-.sidebar
+*/
+.navbar
 {
-	background-color:pink;
-	position: absolute;
-	top:0px;
-	height:100%;
+	background-color:white;
+	top:250px;
+	width:100%;
+	padding: 10px
+
 }
 
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p
+{
+	color:black;
+}
+/*
 .container
 {
 	height:1000px;
