@@ -8,11 +8,18 @@ Base = declarative_base()
 # Place your database schema code here
 
 # Example code:
-class Student(Base):
-    __tablename__ = "students"
+class User(Base):
+    __tablename__ = "users"
     id = Column(Integer, primary_key = True)
     name = Column(String)
-    year = Column(Integer)
+    passward = Column(Integer)
+    skills = Column(String)
+
 
     def __repr__(self):
-        return ("Student name: {}, Student year:{}".format(self.name, self.year))
+        return ("User name: {},\n"
+        	"User passward:{}\n"
+        	"User skills".format(
+        		self.name,
+        		self.passward,
+        		self.skills ))
