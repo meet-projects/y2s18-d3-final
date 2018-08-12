@@ -43,8 +43,13 @@ h1
 {
 	position:relative;
 }
+<<<<<<< HEAD
 */
 .navbar
+=======
+
+.topbar
+>>>>>>> 31b90ce4f00f43efd87f72a70ffe82874c81ea58
 {
 	background-color:white;
 	top:250px;
@@ -53,6 +58,7 @@ h1
 
 }
 
+<<<<<<< HEAD
 img {
 	display: block;
 	margin-left: auto;
@@ -64,6 +70,16 @@ p
 	color:black;
 }
 /*
+=======
+.sidebar
+{
+	background:lightblue;
+	position: fixed;
+	left:300px;
+	height: 100%;
+
+}
+>>>>>>> 31b90ce4f00f43efd87f72a70ffe82874c81ea58
 .container
 {
 	height:1000px;

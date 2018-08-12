@@ -1,6 +1,6 @@
 # Database related imports
 # Make sure to import your tables!
-from model import Base, Student
+from model import Base, User
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -14,13 +14,61 @@ session = DBSession()
 
 # Your database functions are located under here (querying, adding items, etc.)
 
-# Example of adding a student:
-def add_student(student_name, student_year):
-    print("Added a student!")
-    student = Student(name=student_name, year=student_year)
-    session.add(student)
+# Example of adding a user:
+def add_User(user_name, user_passward, user_skills):
+    print("Added a user!")
+    user = User(name=user_name,
+     passward=user_passward,
+     skills= user_skills)
+    session.add(user)
+    session.commit()
+###########################################user
+def get_all_Users():
+    users = session.query(
+    	User).all()
+    return get_all_Users
+
+def get_User_by_name():
+	user = session.query(
+		User).filter_by(name=user_name).first()
+	return user
+############################################comment
+def add_Comment(comment_content):
+    print("Added a comment!")
+    comment = Cumment(comment=comment_content,)
+    session.add(comment)
     session.commit()
 
-def get_all_students():
-    students = session.query(Student).all()
-    return students
+def get_Comment():
+    comment = session.query(
+        Cumment).first()
+    return get_Comment
+
+
+def get_all_Comments():
+    comment = session.query(
+        Cumment).all()
+    return get_all_Comments
+###############################################post
+
+def add_Post(post_name):
+    print("Added a post!")
+    post = Post(post=post_name,)
+    session.add(post)
+    session.commit()
+
+def get_Post():
+    post = session.query(
+        Post).first()
+    return get_Post
+
+
+def get_all_Posts():
+    post = session.query(
+        Post).all()
+    return get_all_Posts
+
+
+
+#add_User("mousa","pass","reuning")
+#print(get_all_Users())
