@@ -70,3 +70,5 @@ def get_all_Posts():
 
 
 
+#add_User("mousa","pass","reuning")
+#print(get_all_Users())

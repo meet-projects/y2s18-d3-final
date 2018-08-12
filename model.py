@@ -7,7 +7,7 @@ Base = declarative_base()
 
 ###########################################user
 class User(Base):
-    __tablename__ = "users"
+    __tablename__ = "Users"
     id = Column(Integer, primary_key = True)
     name = Column(String)
     passward = Column(Integer)
