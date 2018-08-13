@@ -9,27 +9,27 @@ Base = declarative_base()
 
 # Example code:
 class User(Base):
-    __tablename__ = "users"
-    id = Column(Integer, primary_key = True)
+    __tablename__ = "User"
+    id_table = Column(Integer, primary_key = True)
     name = Column(String)
-    passward = Column(Integer)
+    password = Column(String)
     skills = Column(String)
 
 
     def __repr__(self):
-        return ("User name: {},\n"
-        	"User passward:{}\n"
-        	"User skills".format(
+        return ("Username: {},\n"
+            "password: {}, \n"
+        	"skills {} .\n").format(
         		self.name,
-        		self.passward,
-        		self.skills ))
+                self.password,
+        		self.skills)
 
-class Comment(Base):
-    __tablename__ = "comments"
-    id = Column(Integer, primary_key = True)
-    comment_content = Column(String)
 
+class Post(Base):
+    __tablename__ = "Post"
+    id_table = Column(Integer, primary_key = True)
+    post_string = Column(String)
 
     def __repr__(self):
-        return ("comment content: {}".format(
-        		self.comment))
+        return ("this post says: {}.\n").format(
+                self.post_string)

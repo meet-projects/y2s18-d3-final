@@ -1,6 +1,7 @@
  
+
  document.getElementById("myButton").onclick = function () {
-        location.href='log_in.html';
+        location.href="{{url_for('log_in')}}";
     };
 
  
