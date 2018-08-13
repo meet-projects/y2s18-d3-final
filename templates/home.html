@@ -1,6 +1,38 @@
 
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
+<head>
+    <title>OurCommunity</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+    <p id="loging"><a href="{{url_for('log_in')}}">log in</a></p>
+    <p id="signing"><a href="{{url_for('sign_up')}}">sign up</a></p>
+
+    <img src="{{ url_for('static', filename='logo.png') }}" width="200" height="200">
+    <div class="navbar">
+      <p> This is a nav bar! </p>
+      </div>
+
+
+      <div class="box">
+       <h1> Comment box </h1>
+    </div>
+
+
+    <div class="container"> 
+        <div class="comments">
+            insert comments here
+        </div>
+         <div class="sidebar">
+          <h2>Add a post</h2>
+        </div>
+    </div>
+</body>
+=======
     <head>
         <title>OurCommunity</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
@@ -27,4 +59,5 @@
         </div>
 
     </body>
+>>>>>>> b5db8621c489f149c926b0d468dce0d15e0801b1
 </html>
