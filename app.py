@@ -1,8 +1,7 @@
 
 from flask import Flask, render_template, url_for, redirect, request, session
 
-# Add functions you need from databases.py to the next line!
-from databases import add_User, get_all_Users
+from databases import add_User, query_all_users ,add_Post,query_all_posts
 
 # Starting the flask app
 app = Flask(__name__)
@@ -16,10 +15,10 @@ def home():
 def log_in():
 	return render_template('log_in.html')
 
-@app.route('/user/<int:user_id>')
-def display_user(user_id,user):
-    return render_template('user.html', user_id=user_id,user=query_by_id(user_id))
-
+@app.route('/sign-up')
+def sign_up():
+	return render_template('sign_up.html')
+	
 # Running the Flask app
 if __name__ == "__main__":
     app.run(debug=True)

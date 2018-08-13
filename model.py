@@ -5,45 +5,29 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-###########################################user
 class User(Base):
-    __tablename__ = "Users"
-    id = Column(Integer, primary_key = True)
+    __tablename__ = "User"
+    id_table = Column(Integer, primary_key = True)
     name = Column(String)
-    passward = Column(Integer)
+    password = Column(String)
     skills = Column(String)
 
-
     def __repr__(self):
-        return ("User name: {},\n"
-        	"User passward:{}\n"
-        	"User skills".format(
+        return ("Username: {},\n"
+            "password: {}, \n"
+        	"skills {} .\n").format(
         		self.name,
-        		self.passward,
-        		self.skills ))
+                self.password,
+        		self.skills)
 
-#########################################comment
-
-class Comment(Base):
-    __tablename__ = "comments"
-    id = Column(Integer, primary_key = True)
-    comment_content = Column(String)
-
-
-    def __repr__(self):
-        return ("comment content: {}".format(
-        		self.comment))
-
-###########################################post
 
 class Post(Base):
-    __tablename__ = "posts"
-    id = Column(Integer, primary_key = True)
-    post_name = Column(String)
-
+    __tablename__ = "Post"
+    id_table = Column(Integer, primary_key = True)
+    post_string = Column(String)
 
     def __repr__(self):
-        return ("post_name: {}".format(
-        		self.post))
+        return ("this post says: {}.\n").format(
+                self.post_string)
 
 
