@@ -22,14 +22,15 @@
 
 body
 {
-	background-color: #8BAA00;
+	background-color: powderblue;
 	color:white;
 }
 h1
 {
 	color:white;
 	top: 70px;
-	margin-left: 30px;
+	margin-left: 63px;
+	color: black;
 	
 }
 
@@ -60,7 +61,7 @@ h1
 .navbar
 
 {
-	background-color:white;
+	background-color:#d9edf1;
 	top:250px;
 	width:100%;
 	padding: 10px;
@@ -90,6 +91,7 @@ h2{
     position: absolute;
     right:20px;
     bottom:392px;
+    text-decoration:none;
 }
 
 #signing
@@ -106,6 +108,7 @@ h2{
 
 .comments
 {
+	color: black ;
 	background-color: white;
 	position: absolute;
 	width:70%;
@@ -113,6 +116,20 @@ h2{
 	border: 3px solid #166625;
 	left: 5%;
 }
+
+
+.styling{
+	text-decoration:none;
+}
+	a:link, a:visited {
+    	color: black;
+    	text-align: center;
+    	text-decoration: none;
+    }
+
+    /*a:hover, a:active {
+    background-color: #166625 ;
+}*/ 
 
 /*h2
 {
