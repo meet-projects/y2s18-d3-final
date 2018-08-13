@@ -14,6 +14,8 @@
 	background-color: white;
 	border: 3px solid #166625;
 	height: 350px;
+	right: 3%;
+
 
 }
 
@@ -77,31 +79,39 @@ p
 	color:black;
 }
 
+h2{
+	color: black;
+}
 
 
-#sign_up_button
+
+#loging
 {
     position: absolute;
     right:20px;
-    bottom:389px;
+    bottom:392px;
 }
 
-#myButton
+#signing
 {
 	position: absolute;
 	right: 100px;
-	bottom: 389px;
+	bottom: 392px;
 }
 
+.container {
+	position: relative;
+	width: 100%;
+}
 
-.container
+.comments
 {
 	background-color: white;
-	position: relative;
+	position: absolute;
 	width:70%;
 	height: 350px;
 	border: 3px solid #166625;
-	margin-left: 30px;
+	left: 5%;
 }
 
 /*h2
