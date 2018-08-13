@@ -1,11 +1,25 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
 <head>
+<style>
+
+#info {    
+    text-align: center;
+}
+
+.container{
+  background-color:powderblue;
+    text-align: center;
+}
+
+</style>  
     <title>Username</title>
-	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style1.css')}}">
 </head>
+
 <body>
-    <h1>Please enter your log in information .</h1>
+    <h1 id="info">Sign in</h1>
     <form action="action_page.php">
   
   <div class="container">
@@ -21,7 +35,7 @@
     <button type="button" class="cancelbtn">Cancel</button>
   </div>
 </form>
-    <p><a href="{{url_for('home')}}">return to home</a></p>
+    <p id=return_home><a href="{{url_for('home')}}">return to home</a></p>
 
 </body>
 </html>
