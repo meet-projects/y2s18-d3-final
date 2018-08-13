@@ -11,8 +11,12 @@ Session(app)
 
 # App routing code here
 @app.route('/')
-def home():
+def home():	
     return render_template('home.html')
+
+@app.route('/create-post')
+def creat_post():
+	return render_template('creat_post.html')
 
 @app.route('/log-in', methods=['GET','POST'])
 def log_in():

@@ -17,21 +17,22 @@
     <div class="navbar">
          <p id="loging"><a class="styling" href="{{url_for('log_in')}}">log in</a></p>
          <p id="signing"><a class="styling" href="{{url_for('sign_up')}}">sign up</a></p>
-      <p> This is a nav bar! </p>
+      <p> ToolBar </p>
       </div>
 
 
       <div class="box">
-       <h1> Comment box </h1>
+       <h1> Posts & Complains  </h1>
     </div>
 
 
     <div class="container"> 
         <div class="comments">
-            <h2>insert comments here</h2>
+            <h2>show posts here </h2>
         </div>
          <div class="sidebar">
-          <h2>Add a post</h2>
+          <h2><a class="sidebar_text" href='{{url_for("log_in")}}'>Create a Post ?</a></h2>
+
         </div>
     </div>
 </body>
