@@ -1,6 +1,12 @@
 
 from flask import Flask, render_template, url_for, redirect, request, session
+<<<<<<< HEAD
 from databases import add_User, query_all_users ,add_Post,query_all_posts
+=======
+
+# Add functions you need from databases.py to the next line!
+from databases import add_User, get_all_Users
+>>>>>>> 1d35a3499519230215eab0787d07380312fd17ad
 
 # Starting the flask app
 app = Flask(__name__)
