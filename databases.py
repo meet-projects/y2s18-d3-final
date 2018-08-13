@@ -31,6 +31,8 @@ def query_user_by_name(username):
 	name = session.query(
 		User).filter_by(name=username).first()
 	return name
+def query_by_name_and_password(username, password):
+    return session.query(User).filter_by(name = username, password = password).first()
 
 def delete_user_by_id(user_id):
     post = session.query(User).filter_by(id_table=user_id).delete()
@@ -51,7 +53,6 @@ def query_all_posts():
         Post).all()
     return posts
 
-
 def query_post_by_id(post_id):
     post = session.query(Post).filter_by(id_table=post_id).first()
     return post
@@ -59,7 +60,6 @@ def query_post_by_id(post_id):
 def delete_all_posts():
     session.query(Post).delete()
     session.commit
-
 
 def delete_post_by_id(post_id):
     post = session.query(Post).filter_by(id_table=post_id).delete()
@@ -74,5 +74,3 @@ def query_Post():
     post = session.query(
         Post).first()
     return post
-
-
