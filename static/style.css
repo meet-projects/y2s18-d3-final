@@ -6,7 +6,16 @@
 
 /* Put your styles BELOW this line */
 
+.sidebar
+{
 
+	position: absolute;
+	width: 20%;
+	background-color: white;
+	border: 3px solid #166625;
+	height: 350px;
+
+}
 
 
 body
@@ -18,6 +27,7 @@ h1
 {
 	color:white;
 	top: 70px;
+	margin-left: 30px;
 	
 }
 
@@ -46,19 +56,16 @@ h1
 <<<<<<< HEAD
 */
 .navbar
-=======
 
-.topbar
->>>>>>> 31b90ce4f00f43efd87f72a70ffe82874c81ea58
 {
 	background-color:white;
 	top:250px;
 	width:100%;
-	padding: 10px
+	padding: 10px;
+	border: 5px solid #166625;
 
 }
 
-<<<<<<< HEAD
 img {
 	display: block;
 	margin-left: auto;
@@ -68,6 +75,38 @@ img {
 p
 {
 	color:black;
+}
+
+
+
+#sign_up_button
+{
+    position: absolute;
+    right:20px;
+    bottom:389px;
+}
+
+#myButton
+{
+	position: absolute;
+	right: 100px;
+	bottom: 389px;
+}
+
+
+.container
+{
+	background-color: white;
+	position: relative;
+	width:70%;
+	height: 350px;
+	border: 3px solid #166625;
+	margin-left: 30px;
+}
+
+/*h2
+{
+	color: black;
 }
 /*
 =======
