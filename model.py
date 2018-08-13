@@ -10,15 +10,13 @@ class User(Base):
     id_table = Column(Integer, primary_key = True)
     name = Column(String)
     password = Column(String)
-    skills = Column(String)
 
     def __repr__(self):
         return ("Username: {},\n"
-            "password: {}, \n"
-        	"skills {} .\n").format(
+            "password: {}. \n"
+        	).format(
         		self.name,
-                self.password,
-        		self.skills)
+                self.password)
 
 
 class Post(Base):
