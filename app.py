@@ -15,10 +15,16 @@ def home():
 def log_in():
 	return render_template('log_in.html')
 
-@app.route('/sign-up')
+@app.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
-	return render_template('sign_up.html')
-	
+	if request.method == 'POST':
+		return render_template('home.html')
+	else:
+		return render_template('sign_up.html')
 # Running the Flask app
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+
+   #psot request , 
