@@ -11,15 +11,17 @@
 
 body
 {
-	background-color: green;
+	background-color: #8BAA00;
 	color:white;
 }
 h1
 {
-	color:green;
+	color:white;
+	top: 70px;
+	
 }
 
-a 
+/*a 
 {color:white;
 
 }
@@ -41,15 +43,34 @@ a
 {
 	position:relative;
 }
+<<<<<<< HEAD
+*/
+.navbar
+=======
 
 .topbar
+>>>>>>> 31b90ce4f00f43efd87f72a70ffe82874c81ea58
 {
-	background-color:pink;
-	position: absolute;
-	top:0px;
-	height:100%;
+	background-color:white;
+	top:250px;
+	width:100%;
+	padding: 10px
+
 }
 
+<<<<<<< HEAD
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p
+{
+	color:black;
+}
+/*
+=======
 .sidebar
 {
 	background:lightblue;
@@ -58,6 +79,7 @@ a
 	height: 100%;
 
 }
+>>>>>>> 31b90ce4f00f43efd87f72a70ffe82874c81ea58
 .container
 {
 	height:1000px;
