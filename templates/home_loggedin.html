@@ -6,42 +6,33 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
-<body>
+<!--<body background="sky.jpg">-->
 
-   <!-- <div class="image">
-        <img src="{{ url_for('static', filename='sky.jpg') }}">
-    </div>
-
-    <!-<p id="loging"><a href="{{url_for('log_in')}}">log in</a></p>
+    <!--<p id="loging"><a href="{{url_for('log_in')}}">log in</a></p>
     <p id="signing"><a href="{{url_for('sign_up')}}">sign up</a></p>-->
 
     
     <img src="{{ url_for('static', filename='logo.png') }}" width="200" height="200">
     <div class="navbar">
-         <p id="loging"><a class="styling" href="{{url_for('log_in')}}">log in</a></p>
-         <p id="signing"><a class="styling" href="{{url_for('sign_up')}}">sign up</a></p>
+      <h3>logged in as : {{ name }}.</h3>
       <p> ToolBar </p>
       </div>
 
 
-    
-
-<div class="everything">
-
-     <div class="box">
+      <div class="box">
        <h1> Posts & Complains  </h1>
-      </div>
+    </div>
+
 
     <div class="container"> 
         <div class="comments">
-            <h2> {{ ey_lmao }} </h2>
+            <h2>show posts here </h2>
         </div>
          <div class="sidebar">
-          <h2><a class="sidebar_text" href='{{url_for("log_in")}}'>Create a Post ?</a></h2>
+          <h2><a class="sidebar_text" href='{{url_for("create_post")}}'>Create a Post ?</a></h2>
 
         </div>
     </div>
-</div>
 </body>
 
 </html>
