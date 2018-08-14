@@ -14,7 +14,7 @@
     <img src="{{ url_for('static', filename='logo.png') }}" width="200" height="200">
     <div class="navbar">
       <h3>logged in as : {{ name }}.</h3>
-      <!--<p> ToolBar </p>-->
+
       </div>
 
 
@@ -27,7 +27,7 @@
 
     <div class="container"> 
         <div class="comments">
-            <h2>show posts here </h2>
+            <h2> {{strings}} </h2>
         </div>
          <div class="sidebar">
           <h2><a class="sidebar_text" href='{{url_for("create_post")}}'>Create a Post ?</a></h2>
