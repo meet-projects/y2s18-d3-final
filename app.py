@@ -18,7 +18,8 @@ def home():
 @app.route('/<int:id_table>')
 def home_loggedin(id_table):
 	user1 = query_user_by_id(id_table)
-	return render_template('home_loggedin.html',name =user1.name)
+	posts = query_all_posts()
+	return render_template('home_loggedin.html',name =user1.name, strings= posts)
 
 @app.route('/create-post',methods=['GET','POST'])
 def create_post(): 
@@ -28,6 +29,10 @@ def create_post():
 		post_string = request.form['post_submit']
 		add_Post(post_string)
 		return redirect(url_for('home_loggedin',id_table=flask_session['user_id']))
+
+@app.route('/about-us')
+def about_us():
+	return render_template('aboutus.html')
 
 @app.route('/log-in', methods=['GET','POST'])
 def log_in():
