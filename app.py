@@ -13,13 +13,13 @@ app.config['SESSION_TYPE'] = 'filesystem'
 @app.route('/')
 def home():
     posts = query_all_posts()
-    return render_template('home.html',strings=posts)
+    return render_template('home.html',posts=posts)
 
 @app.route('/<int:id_table>')
 def home_loggedin(id_table):
     user1 = query_user_by_id(id_table)
     posts = query_all_posts()
-    return render_template('home_loggedin.html',name =user1.name, strings= posts)
+    return render_template('home_loggedin.html',name =user1.name, posts= posts)
 
 @app.route('/create-post',methods=['GET','POST'])
 def create_post(): 
