@@ -19,20 +19,25 @@
 </head>
 
 <body>
-  <h1> 
-    <div class="container" >
+  <h1 id=welcome_back> Welcome back to ourCommunity! </h1>
+  <h2 id=continue> Continue helping yourCommunity by logging in. </h2>
+    <div class="container">
     <h1 id="info">Log in</h1>
     <form action="/log-in" method="post">
     <form action="{{ url_for('log_in') }}" method="post">
-      
-  <div class="container">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
     <br>
+    <br>
+    <br>
+
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
     <br>
-    <button type="submit">Login</button>
+    <br>
+    <br>
+
+    <button id= submit type="submit">Login</button>
   </div>
 
     <button type="button" class="cancelbtn">Cancel</button>
