@@ -14,11 +14,8 @@
     <img src="{{ url_for('static', filename='logo.png') }}" width="200" height="200">
     <div class="navbar">
       <h3>logged in as : {{ name }}.</h3>
-
+      <p id="loggout"><a class="styling" href="{{url_for('log_out')}}">log out</a></p>
       </div>
-
-
-      
 
   <div class="everything">
     <div class="box">
