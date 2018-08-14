@@ -19,10 +19,16 @@
 </head>
 
 <body>
+<<<<<<< HEAD
 
     <h1 id="info">Sign in</h1>
-    <form action="/log-in">
+    <form action="/log-in" , method="POST">
     <h1>Please enter your log in information .</h1>
+=======
+    <div class="container" >
+    <h1 id="info">Log in</h1>
+    <form action="/log-in" method="post">
+>>>>>>> 8bf73794ce7118e02a6da2f90aa2b1f0b59e65c8
     <form action="{{ url_for('log_in') }}" method="post">
   <div class="container">
     <label for="uname"><b>Username</b></label>
@@ -33,7 +39,7 @@
     <br>
     <button type="submit">Login</button>
   </div>
-  <div class="container" >
+
     <button type="button" class="cancelbtn">Cancel</button>
   </div>
 </form>
