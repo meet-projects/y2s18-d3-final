@@ -14,24 +14,15 @@ app.config['SESSION_TYPE'] = 'filesystem'
 def home():	
     return render_template('home.html')
 
-@app.route('/create-post')
-def create_post():
-	return render_template('create_post.html')
+@app.route('/create-post',methods=['GET','POST'])
+def create_post(): 
+	if request.method == 'GET':
+	    return render_template('create_post.html')
+	else:
+		post_string = request.form['post_submit']
+		add_Post(post_string)
+		return redirect(url_for('home'))
 
-@app.route('/log-in', methods=['GET','POST'])
-def log_in():
-	if request.method == 'POST':
-		name = request.form['uname']
-		password = request.form['psw']
-		user = query_by_name_and_password(name, password)
-		print(user)
-		if user is not None and user.password == password:
-			flask_session['user_id'] = user.id_table
-			return redirect(url_for('home'))
-		else :
-			return render_template('log_in.html')
-	else:		
-		return render_template('log_in.html')
 
 @app.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
@@ -43,6 +34,26 @@ def sign_up():
 
 	else:
 		return render_template('sign_up.html')
+
+@app.route('/<int:id_table>')
+def home_loggedin(id_table):
+	user1 = query_user_by_id(id_table)
+	return render_template('home_loggedin.html',name =user1.name)
+
+@app.route('/log-in', methods=['GET','POST'])
+def log_in():
+	if request.method == 'POST':
+		name = request.form['uname']
+		password = request.form['psw']
+		user = query_by_name_and_password(name, password)
+		if user is not None and user.password == password:
+			flask_session['user_id'] = user.id_table
+			return redirect(url_for('home_loggedin',id_table= flask_session['user_id']))
+		else :
+			return render_template('log_in.html')
+	else:		
+		return render_template('log_in.html')
+
 
 
 # Running the Flask app
