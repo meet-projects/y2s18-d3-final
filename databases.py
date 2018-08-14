@@ -21,7 +21,6 @@ def add_User(username, password):
     session.add(user_object)
     session.commit()
 
-
 def query_all_users():
     users = session.query(
     	User).all()
@@ -38,6 +37,10 @@ def delete_user_by_id(user_id):
     post = session.query(User).filter_by(id_table=user_id).delete()
     session.commit()
 
+def query_user_by_id(user_id):
+    user = session.query(
+        User).filter_by(id_table=user_id).first()
+    return user
 
 def delete_all_users():
     session.query(User).delete()
