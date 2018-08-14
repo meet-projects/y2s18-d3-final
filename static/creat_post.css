@@ -8,9 +8,10 @@
 	font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;}
 
 .image{
-	
+
 }
 .everything{
+	position: static;
 	text-align: center;
 	bottom: 100px;
 }
