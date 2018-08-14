@@ -19,26 +19,21 @@
 </head>
 
 <body>
-<<<<<<< HEAD
 	<div class="container" >
-    <form action="/create-post">
     <h1 class="info", class="join">Please enter your post</h1>
 	<h2 class="info", class="join">make sure to use less than 500 characters</h1>
     <br>
-=======
     <form action="/create-post", method="POST">
     <h1>Please enter your post, make sure to use less than 500 characters .</h1>
     <br>
     <input size="70" height="200" maxlength="500" type="text" placeholder="Enter your post" name="post_submit" required>
->>>>>>> 8456064341afcc3c948631cee3d7061e1659fff2
     <br>
-    <input size="70" height="200" maxlength="500" type="text" placeholder="Enter your post" name="post" required>
   	<button type="submit">Submit </button>
   	<br>
   	<br>
     <button type="button" class="cancelbtn">Cancel</button>
-  </div>
-</form>
+    </div>
+    </form>
     <p id="return_home", class="info"><a id="link" href="{{url_for('home')}}">return to home</a></p>
 
 </body>
