@@ -1,5 +1,20 @@
 #info{
+	 font-size:30px;
 	 font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
+
+}
+#continue{
+	text-align:center;
+	position: relative;
+	font-size: 30px;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
+}
+#welcome_back{
+	text-align:center;
+	position: relative;
+	font-size: 40px;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
+
 }
 .container{
 	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
@@ -12,28 +27,28 @@
 #join {
 	text-align:center;
 	position: relative;
-	font-size: 50px;
+	font-size: 40px;
 	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
 }
 #cheese{
 	text-align: center;
 	position: relative;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
 
 }
 #signup{
 	position: relative;
 	top: 30px;
-	font-size: 40px;
+	font-size: 30px;
 
 }
 #submit{
-	position: relative;
-	bottom: 10px;
+	text-align:center;
+
 }
 .signup_password{
 	position: relative;
-	bottom: 20px;
+	bottom: 50px;
 
 }
