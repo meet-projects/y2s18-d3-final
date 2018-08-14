@@ -15,8 +15,8 @@ def home():
     return render_template('home.html')
 
 @app.route('/create-post')
-def creat_post():
-	return render_template('creat_post.html')
+def create_post():
+	return render_template('create_post.html')
 
 @app.route('/log-in', methods=['GET','POST'])
 def log_in():
