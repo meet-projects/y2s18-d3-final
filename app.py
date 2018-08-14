@@ -1,13 +1,13 @@
 
 from flask import Flask, render_template, url_for, redirect, request, session as flask_session
-from flask.ext.session import Session
+#from flask.ext.session import Session
 from databases import *
 
 # Starting the flask app
 app = Flask(__name__)
 app.secret_key = 'super secret key'
 app.config['SESSION_TYPE'] = 'filesystem'
-Session(app)
+#Session(app)
 
 # App routing code here
 @app.route('/')
