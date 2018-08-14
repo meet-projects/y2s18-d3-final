@@ -11,8 +11,13 @@ app.config['SESSION_TYPE'] = 'filesystem'
 
 # App routing code here
 @app.route('/')
-def home():	
-    return render_template('home.html')
+def home():
+		return render_template('home.html')
+
+@app.route('/<int:id_table>')
+def home_loggedin(id_table):
+	user1 = query_user_by_id(id_table)
+	return render_template('home_loggedin.html',name =user1.name)
 
 @app.route('/create-post',methods=['GET','POST'])
 def create_post(): 
@@ -21,24 +26,7 @@ def create_post():
 	else:
 		post_string = request.form['post_submit']
 		add_Post(post_string)
-		return redirect(url_for('home'))
-
-
-@app.route('/sign-up', methods=['GET', 'POST'])
-def sign_up():
-	if request.method == 'POST':
-		name = request.form['username'] 
-		password = request.form['psw']
-		add_User(name,password)
-		return redirect(url_for('home'))
-
-	else:
-		return render_template('sign_up.html')
-
-@app.route('/<int:id_table>')
-def home_loggedin(id_table):
-	user1 = query_user_by_id(id_table)
-	return render_template('home_loggedin.html',name =user1.name)
+		return redirect(url_for('home_loggedin',id_table=flask_session['user_id']))
 
 @app.route('/log-in', methods=['GET','POST'])
 def log_in():
@@ -53,6 +41,17 @@ def log_in():
 			return render_template('log_in.html')
 	else:		
 		return render_template('log_in.html')
+
+@app.route('/sign-up', methods=['GET', 'POST'])
+def sign_up():
+	if request.method == 'POST':
+		name = request.form['username'] 
+		password = request.form['psw']
+		add_User(name,password)
+		return redirect(url_for('home'))
+
+	else:
+		return render_template('sign_up.html')
 
 
 
