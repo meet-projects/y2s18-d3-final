@@ -1,3 +1,17 @@
 h1{
-	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif
+	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif;
+	background-color: 
 }
+
+.all{
+	background-color: powderblue;
+	height:100%;
+	position: absolute;
+	width: 100%
+}
+
+p{
+	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif;
+	padding-top: 150px;
+}
+
