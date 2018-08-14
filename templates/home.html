@@ -6,9 +6,13 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
-<!--<body background="sky.jpg">-->
+<body>
 
-    <!--<p id="loging"><a href="{{url_for('log_in')}}">log in</a></p>
+   <!-- <div class="image">
+        <img src="{{ url_for('static', filename='sky.jpg') }}">
+    </div>
+
+    <!-<p id="loging"><a href="{{url_for('log_in')}}">log in</a></p>
     <p id="signing"><a href="{{url_for('sign_up')}}">sign up</a></p>-->
 
     
@@ -20,20 +24,24 @@
       </div>
 
 
-      <div class="box">
-       <h1> Posts & Complains  </h1>
-    </div>
+    
 
+<div class="everything">
+
+     <div class="box">
+       <h1> Posts & Complains  </h1>
+      </div>
 
     <div class="container"> 
         <div class="comments">
             <h2> {{ ey_lmao }} </h2>
         </div>
          <div class="sidebar">
-          <h2><a class="sidebar_text" href='{{url_for("create_post")}}'>Create a Post ?</a></h2>
+          <h2><a class="sidebar_text" href='{{url_for("log_in")}}'>Create a Post ?</a></h2>
 
         </div>
     </div>
+</div>
 </body>
 
 </html>
