@@ -25,7 +25,8 @@ class Post(Base):
     post_string = Column(String)
 
     def __repr__(self):
-        return ("this post says: {}.\n").format(
+        return ("{} \n "
+            "\n").format(
                 self.post_string)
 
 
