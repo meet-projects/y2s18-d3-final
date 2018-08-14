@@ -32,12 +32,17 @@
 
     <div class="container"> 
         <div class="comments">
-            <h2> {{ strings }} </h2>
+            <ol>
+              {%for post in posts%}
+              <li> {{ post }}</li>
+              {% endfor %}
+            </ol>
         </div>
-         <div class="sidebar">
-          <h2><a class="sidebar_text" href='{{url_for("log_in")}}'>Create a Post ?</a></h2>
 
-        </div>
+          <a class="sidebar_text" href='{{url_for("log_in")}}'>
+          <div class="sidebar">
+            <h2> Create a Post ?</h2>
+          </div></a>
     </div>
 </div>
 </body>

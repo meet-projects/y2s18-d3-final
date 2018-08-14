@@ -1,26 +1,38 @@
 
 .info{
-	font-family:"Courier New", Courier, monospace
+	font-size: 30px;
+	font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
+
 .container{
-	font-family: "Courier New", Courier, monospace
+	font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;}
+
+.image{
+
+}
+.everything{
+	position: static;
+	text-align: center;
+	bottom: 100px;
 }
 #return_home {
-	font-family: "Courier New", Courier, monospace
+	font-size: 15px;
+	font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+
 }
-.join{
+#welcome{
+	text-align:center;
 	font-family: Avantgrade,TeX Gyre Advantor, URW Gothic L, sans-serif;
-	position: relative;
 	font-size: 50px;
+	
 }
 #link{
 	text-decoration:none;
-	font-family: "Courier New", Courier
+	font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 #cheese{
-	text-align: left;
-	position: relative;
-	font-size: 20px;
+	text-align: center;
+	font-size: 35px;
 	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
 
 }

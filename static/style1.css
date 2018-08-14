@@ -5,9 +5,10 @@
 
 #info{
 	position: relative;
-	top: 15px;
-	 font-size:30px;
-	 font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
+	top: 20px;
+	right: 5px;
+	font-size:30px;
+    font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
 
 }
 #continue{
@@ -41,7 +42,7 @@
 #join {
 	text-align:center;
 	position: relative;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
 }
 #cheese{
@@ -59,7 +60,6 @@
 }
 #submit{
 	text-align:center;
-
 }
 .signup_password{
 	position: relative;
