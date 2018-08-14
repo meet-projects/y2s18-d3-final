@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
 
 #info {    
@@ -26,13 +27,13 @@
     <form action="/log-in" method="post">
     <form action="{{ url_for('log_in') }}" method="post">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input class="form-control" type="text" placeholder="Enter Username" name="uname" required>
     <br>
     <br>
     <br>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input class="form-control" type="password" placeholder="Enter Password" name="psw" required>
     <br>
     <br>
     <br>
