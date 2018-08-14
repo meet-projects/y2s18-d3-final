@@ -19,10 +19,12 @@
 </head>
 
 <body>
+  <h1> 
     <div class="container" >
     <h1 id="info">Log in</h1>
     <form action="/log-in" method="post">
     <form action="{{ url_for('log_in') }}" method="post">
+      
   <div class="container">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
