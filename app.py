@@ -12,7 +12,8 @@ app.config['SESSION_TYPE'] = 'filesystem'
 # App routing code here
 @app.route('/')
 def home():
-		return render_template('home.html')
+		posts = query_all_posts()
+		return render_template('home.html',strings=posts)
 
 @app.route('/<int:id_table>')
 def home_loggedin(id_table):
@@ -59,6 +60,3 @@ def sign_up():
 if __name__ == "__main__":
     app.run(debug=True)
 
-
-
-   #psot request , 
