@@ -10,6 +10,8 @@
 }
 .join{
 	font-family: Avantgrade,TeX Gyre Advantor, URW Gothic L, sans-serif
+	position: relative;
+	font-size: 50px;
 }
 #link{
 	text-decoration:none;
