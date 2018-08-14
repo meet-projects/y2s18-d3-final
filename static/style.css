@@ -150,6 +150,12 @@ h2
 	background-size: 100%, 100%;
 }
 
+
+h3{
+	color: black;
+	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif
+}
+
     /*a:hover, a:active {
     background-color: #86cd82 ;
 }*/ 
