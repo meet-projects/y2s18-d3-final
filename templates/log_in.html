@@ -26,19 +26,16 @@
     <h1 id="info">Log in</h1>
     <form action="/log-in" method="post">
     <form action="{{ url_for('log_in') }}" method="post">
+    <br>
     <label for="uname"><b>Username</b></label>
     <input class="form-control" type="text" placeholder="Enter Username" name="uname" required>
     <br>
     <br>
-    <br>
-
     <label for="psw"><b>Password</b></label>
     <input class="form-control" type="password" placeholder="Enter Password" name="psw" required>
     <br>
     <br>
-    <br>
-
-    <button id= submit type="submit">Login</button>
+    <button id= login type="submit">Login</button>
   </div>
 
     <button type="button" class="cancelbtn">Cancel</button>
