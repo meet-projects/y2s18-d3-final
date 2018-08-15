@@ -1,14 +1,33 @@
 h1{
+	font-size: 100px;
 	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif;
-	background-color: 
+	background-color: powderblue;
+}
+#communitythings{
+	position: relative;
+	bottom: 50px;
+	font-size:37px;
+	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif;
+	margin-top: 100px;
+    margin-bottom: 80px;
+    margin-right: 120px;
+    margin-left: 80px;
 }
 
 .all{
-	background-color: powderblue;
+	background-color: lightblue;
 	height:100%;
 	position: absolute;
 	width: 100%
 }
+#signupnow{
+	position: relative;
+	bottom: 100px;
+	font-size: 45px;
+	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif;
+	background-color: powderblue;
+}
+
 
 p{
 	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif;
