@@ -35,7 +35,6 @@ def about_us():
 
 @app.route('/log-out')
 def log_out():
-
     del flask_session['username']
     return render_template('home.html',name="",posts=query_all_posts())
 

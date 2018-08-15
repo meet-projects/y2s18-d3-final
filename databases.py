@@ -78,4 +78,3 @@ def query_Post():
         Post).first()
     return post
 
-delete_all_users()
