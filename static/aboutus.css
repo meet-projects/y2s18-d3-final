@@ -36,8 +36,15 @@ p{
 }
 
 .space_name{
+	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif;
 	margin: 40px;
 }
 
 
 
+.paragraphs{
+	text-align:center;
+	position: relative;
+	font-size: 40px;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
