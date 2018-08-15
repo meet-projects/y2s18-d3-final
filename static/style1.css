@@ -39,6 +39,17 @@
 	font-size: 15px;
 	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
 }
+#sign_up_now{
+	text-align: center;
+	font-size: 15px;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
+
+}
+#log_in_now{
+	text-align: center;
+	font-size: 15px;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
+}
 #join {
 	text-align:center;
 	position: relative;

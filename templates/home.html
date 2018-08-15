@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>OurCommunity</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
@@ -16,6 +17,7 @@
     
     <img src="{{ url_for('static', filename='logo.png') }}" width="200" height="200">
     <div class="navbar">
+      <h3>logged in as : {{ name }}.</h3>
          <p id="loging"><a class="styling" href="{{url_for('log_in')}}">log in</a></p>
          <p id="signing"><a class="styling" href="{{url_for('sign_up')}}">sign up</a></p>
          <p id="about_us"><a class="styling" href="{{url_for('about_us')}}">about us</a></p>
@@ -32,19 +34,19 @@
 
     <div class="container"> 
         <div class="comments">
-            <ol>
+            <ul>
               {%for post in posts%}
               <li> {{ post }}</li>
+              <br>
               {% endfor %}
-            </ol>
+            </ul>
         </div>
 
-          <a class="sidebar_text" href='{{url_for("log_in")}}'>
+          <a class="sidebar_text" href='{{url_for("create_post")}}'>
           <div class="sidebar">
             <h2> Create a Post ?</h2>
           </div></a>
     </div>
 </div>
 </body>
-
 </html>
