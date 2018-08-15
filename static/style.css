@@ -4,14 +4,14 @@
     margin: 0;
 }
 
-/* Put your styles BELOW this line */
+
 
 .sidebar
 {
 
 	position: absolute;
 	width: 20%;
-	background-color: white;
+	background-color: #f4fcfc;
 	border: 3px solid #86cd82;
 	height: 150px;
 	right: 3%;
@@ -106,7 +106,7 @@ h2
 .comments
 {
 	color: black ;
-	background-color: white;
+	background-color: #f4fcfc;
 	position: absolute;
 	width:70%;
 	height: 350px;
@@ -139,4 +139,19 @@ h2
 h3{
 	color: black;
 	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif
+
+}
+
+
+p{
+	position: absolute;
+    right:20px;
+    bottom:392px;
+    text-decoration:none;
+}
+
+ul
+{
+	margin-left: 30px;
+	font-size: 25px;
 }
