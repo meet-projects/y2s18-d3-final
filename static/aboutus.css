@@ -3,6 +3,22 @@ h1{
 	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif;
 	background-color: powderblue;
 }
+.clickable{
+	position: relative;
+	bottom: 100px;
+	
+	
+}
+#return_home{
+	position: relative;
+	bottom: 20px;
+	font-size:20px;
+	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+#sign_up_now{
+	font-size: 20px;
+	font-family: Avantgarde , TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
 #communitythings{
 	position: relative;
 	bottom: 50px;
