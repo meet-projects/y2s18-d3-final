@@ -28,6 +28,7 @@
 	text-align: center;
 	position: relative;
 	bottom: 40px;
+	font-size: 15px
 }
 .container{
 	font-size: 25px;
@@ -36,18 +37,18 @@
 }
 #return_home {
 	text-align: center;
-	font-size: 15px;
+	font-size: 20px;
 	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
 }
 #sign_up_now{
 	text-align: center;
-	font-size: 15px;
+	font-size: 25px;
 	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
 
 }
 #log_in_now{
 	text-align: center;
-	font-size: 15px;
+	font-size: 25px;
 	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif
 }
 #join {
