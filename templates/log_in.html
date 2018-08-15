@@ -1,62 +1,55 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<style>
-
-#info {    
-    text-align: center;
-}
-
-.container{
-  background-color:powderblue;
-    text-align: center;
-}
-
-.flashes{
-    padding: 20px;
-    margin-left: 75px;
-    margin-right:75px;
-    background-color: #38A700; 
-    color: white;
-    margin-bottom: 15px;
-}
-
-</style>  
-    <title>Username</title>
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-    <ul class=flashes>
-    {% for message in messages %}
-      <li>{{ message }}</li>
-    {% endfor %}
-    </ul>
-    {% endif %}
-    {% endwith %}
-  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style1.css')}}">
-</head>
-
-<body>
-  <h1 id=welcome_back> Welcome back to ourCommunity! </h1>
-  <h2 id=continue> Continue helping yourCommunity by logging in. </h2>
-    <div class="container">
-    <h1 id="info">Log in</h1>
-    <form action="/log-in" method="post">
-    <form action="{{ url_for('log_in') }}" method="post">
-    <br>
-    <label for="uname"><b>Username</b></label>
-    <input class="form-control" type="text" placeholder="Enter Username" name="uname" required>
-    <br>
-    <br>
-    <label for="psw"><b>Password</b></label>
-    <input class="form-control" type="password" placeholder="Enter Password" name="psw" required>
-    <br>
-    <br>
-    <button id= login type="submit">Login</button>
-  </div>
-    <p id=sign_up_now><a href="{{url_for('sign_up')}}">don't have an account? sign up now</a></p>
-     <p id=return_home><a href="{{url_for('home')}}">return to home</a></p>
-
-</body>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style1.css')}}">
+        <style>
+            #info {    
+                text-align: center;
+            }
+            .container{
+                background-color:powderblue;
+                text-align: center;
+            }
+            .flashes{
+                padding: 20px;
+                margin-left: 75px;
+                margin-right:75px;
+                background-color: #38A700; 
+                color: white;
+                margin-bottom: 15px;
+            }
+        </style>
+         <title>Username</title>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <ul class=flashes>
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+    </head>
+    <body>
+        <h1 id=welcome_back> Welcome back to ourCommunity! </h1>
+        <h2 id=continue> Continue helping yourCommunity by logging in. </h2>
+            <div class="container">
+                <h1 id="info">Log in</h1>
+                <form action="{{ url_for('log_in') }}" method="post">
+                    <br>
+                    <label for="uname"><b>Username</b></label>
+                    <input class="form-control" type="text" placeholder="Enter Username" name="uname" required>
+                    <br>
+                    <br>
+                    <label for="psw"><b>Password</b></label>
+                    <input class="form-control" type="password" placeholder="Enter Password" name="psw" required>
+                    <br>
+                    <br>
+                    <button id= login type="submit">Login</button>
+                </form>
+            </div>
+        <p id=sign_up_now><a href="{{url_for('sign_up')}}">don't have an account? sign up now</a></p>
+        <p id=return_home><a href="{{url_for('home')}}">return to home</a></p>
+    </body>
 </html>

@@ -18,7 +18,6 @@ class User(Base):
         		self.name,
                 self.password)
 
-
 class Post(Base):
     __tablename__ = "Post"
     id_table = Column(Integer, primary_key = True)

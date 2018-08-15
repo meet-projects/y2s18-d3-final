@@ -32,9 +32,13 @@ h1{
 
 .all{
 	background-color: lightblue;
+	background-image:url("sky4.jpeg");
 	height:100%;
 	position: absolute;
-	width: 100%
+	width: 100%;
+	background-size:100%, 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
 }
 #signupnow{
 	position: relative;

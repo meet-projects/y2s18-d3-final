@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='aboutus.css') }}">
+    <head>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='aboutus.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                img {
+                    border-radius: 50%;
+                }
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-img {
-  border-radius: 50%;
-}
-
-.paragraphs { 
-text-align: center }
-</style>
-
-    
-<div class="all">
-
+                .paragraphs { 
+                    text-align: center 
+                }
+            </style>
         <title>About us</title>
-        </head>
-            <div class=paragraphs>
-    <h1>About us:</h1>
-    <div>
-    <p id=communitythings>ourCommunity is a unique website that allows you
-    to contact different people and work together in order to fix and improve YOUR community.
-    They will use our platform in order to share their problems and receive help from different users of the website. </p>
+    </head>
+    <body>
+    <div class="all">
+        <div class=paragraphs>
+            <h1>About us:</h1>
+            <div>
+             <p id=communitythings>ourCommunity is a unique website that allows you
+             to contact different people and work together in order to fix and improve YOUR community.
+             They will use our platform in order to share their problems and receive help from different users of the website. </p>
+            </div>
 
+            <div class=clickable>
+                <p id=sign_up_now><a href="{{url_for('sign_up')}}"><h3>Sign up now to be a part of the change! </h3></a></p>
+                <p id=return_home><a href="{{url_for('home')}}">return to home</a></p>
+            </div>
+        </div>
     </div>
-    <div class=clickable>
-    <p id=sign_up_now><a href="{{url_for('sign_up')}}">Sign up now to be a part of the change! </a></p>
-    <p id=return_home><a href="{{url_for('home')}}">return to home</a></p>
-    </div>
-</div>
-
-</div>
     </body>
-</div>
-
 </html>
 
 

@@ -1,17 +1,14 @@
-
 from flask import Flask, flash, render_template, url_for, redirect, request, session as flask_session
 from databases import *
-
 
 app = Flask(__name__)
 app.secret_key = 'super secret key'
 app.config['SESSION_TYPE'] = 'filesystem'
 
-
 @app.route('/')
 def home():
     print(flask_session)
-    posts =query_all_posts() 
+    posts = query_all_posts() 
     posts = posts[::-1]
     if 'username' in flask_session:
         return render_template('home_loggedin.html',name="logged in as : " +flask_session['username'],posts=posts)
@@ -29,14 +26,20 @@ def create_post():
             return redirect(url_for('home'))
     else:
         return redirect(url_for('log_in'))
+
 @app.route('/about-us')
 def about_us():
     return render_template('aboutus.html')
 
 @app.route('/log-out')
 def log_out():
-    del flask_session['username']
-    return render_template('home.html',name="",posts=query_all_posts())
+    posts = query_all_posts()
+    posts = posts[::-1]
+    if 'username' in flask_session:
+        del flask_session['username']
+        return render_template('home.html',name="",posts=posts)
+    else:
+        return redirect(url_for('home'))
 
 @app.route('/log-in', methods=['GET','POST'])
 def log_in():
@@ -68,7 +71,6 @@ def sign_up():
 
     else:
         return render_template('sign_up.html')
-
 
 if __name__ == "__main__":
     app.run(debug=True)
