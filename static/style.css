@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-/* Put your styles BELOW this line */
+
 
 .sidebar
 {
@@ -24,6 +24,7 @@ h3 {
 }
 body
 {
+	margin: 0;
 	background-color: powderblue;
 	color:white;
 	/*background-image: url("sky.jpg");*/
@@ -38,30 +39,7 @@ h1
 	
 }
 
-/*a 
-{color:white;
 
-}
-.v
-{
-	color:pink;
-}
-.nv
-{
-	color:white;
-}
-
-.title
-{
-	height:60px
-	width:100%;
-}
-.container
-{
-	position:relative;
-}
-<<<<<<< HEAD
-*/
 .navbar
 
 {
@@ -172,43 +150,8 @@ p{
     text-decoration:none;
 }
 
-
 ul
 {
 	margin-left: 30px;
 	font-size: 25px;
-}
-
-
-
-    /*a:hover, a:active {
-    background-color: #86cd82 ;
-}*/ 
-
-/*h2
-{
-	color: black;
-}
-/*
-=======
-.sidebar
-{
-	background:lightblue;
-	position: fixed;
-	left:300px;
-	height: 100%;
-
-}
->>>>>>> 31b90ce4f00f43efd87f72a70ffe82874c81ea58
-.container
-{
-	height:1000px;
-	position: relative;
-}
-
-.content
-{
-	position:absolute;
-	top:0px;
-	left:300px;
 }

@@ -59,7 +59,7 @@ def sign_up():
         name = request.form['username'] 
         password = request.form['psw']
         add_User(name,password)
-        return redirect(url_for('home'))
+        return redirect(url_for('log_in'))
 
     else:
         return render_template('sign_up.html')
