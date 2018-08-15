@@ -111,7 +111,7 @@ h2
 	width:70%;
 	border: 3px solid #86cd82;
 	left: 5%;
-
+	word-wrap: break-word;
 }
 
 
@@ -128,7 +128,7 @@ h2
 .everything{
 	background-image:url("sky4.jpeg");
 	z-index: -1;
-	height:500px;
+	height:1000px;
 	background-repeat: no-repeat;
 	background-size: 100%, 100%;
 }
