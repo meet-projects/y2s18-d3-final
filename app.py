@@ -16,9 +16,9 @@ def home():
     print(flask_session)
     posts =query_all_posts() 
     if 'username' in flask_session:
-        return render_template('home.html',name=flask_session['username'],posts=posts)
+        return render_template('home_loggedin.html',name="logged in as : " +flask_session['username'],posts=posts)
     else :
-        return render_template('home.html',name="no one",posts=posts)
+        return render_template('home.html',name=" ",posts=posts)
 
 #@app.route('/<int:id_table>')
 #def home_loggedin(id_table):
