@@ -60,3 +60,5 @@ def delete_all_posts():
 def delete_post_by_id(post_id):
     post = session.query(Post).filter_by(id_table=post_id).delete()
     session.commit()
+
+
